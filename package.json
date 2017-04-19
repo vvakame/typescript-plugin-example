@@ -1,0 +1,16 @@
+{
+  "name": "typescript-plugin-example",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TypeScript plugin example",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "TSS_LOG='-file tsserver.log -level verbose' node node_modules/typescript/bin/tsserver < input.ldjson"
+  },
+  "author": "vvakame",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^2.3.0"
+  }
+}

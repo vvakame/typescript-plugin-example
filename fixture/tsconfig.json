@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "strict": true,
+    "noEmit": true,
+    "plugins": [
+      {
+        "name": "../../",
+        "verbose": true
+      }
+    ]
+  }
+}
