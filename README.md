@@ -9,6 +9,25 @@ We can't use plugin with tsc command. We should use plugin via tsserver.
 ## How to try?
 
 ```
+$ npm install --save-dev @vvakame/typescript-plugin-example
+$ cat tsconfig.json
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "plugins": [
+      {
+        "name": "@vvakame/typescript-plugin-example",
+        // Plugin specific configuration
+        "verbose": true
+      }
+    ]
+  }
+}
+```
+
+```
 $ git clone https://github.com/vvakame/typescript-plugin-example.git
 $ cd typescript-plugin-example
 $ npm install && npm run build
