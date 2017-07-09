@@ -1,5 +1,10 @@
 import * as ts from "typescript/lib/tsserverlibrary";
 
+// workaround https://github.com/Microsoft/TypeScript/issues/16782
+declare module "typescript/lib/tsserverlibrary" {
+    interface Comparison { }
+}
+
 const factory: ts.server.PluginModuleFactory = mod => {
     const ts = mod.typescript;
 

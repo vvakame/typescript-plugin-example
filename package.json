@@ -4,12 +4,14 @@
   "description": "TypeScript plugin example",
   "main": "lib/index.js",
   "scripts": {
-    "build": "tsc",
-    "test": "TSS_LOG='-file tsserver.log -level verbose' node node_modules/typescript/bin/tsserver < input.ldjson"
+    "build": "tsfmt -r && tsc",
+    "test": "TSS_LOG='-file tsserver.log -level verbose' node node_modules/typescript/bin/tsserver < input.ldjson",
+    "prepublish": "echo You should exec 'npm publish --access=public'"
   },
   "author": "vvakame",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^2.4.1"
+    "typescript": "^2.5.0-dev.20170707",
+    "typescript-formatter": "^5.2.0"
   }
 }
