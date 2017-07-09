@@ -1,8 +1,19 @@
 {
   "name": "@vvakame/typescript-plugin-example",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "TypeScript plugin example",
   "main": "lib/index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vvakame/typescript-plugin-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vvakame/typescript-plugin-example/issues"
+  },
+  "homepage": "https://github.com/vvakame/typescript-plugin-example#readme",
   "scripts": {
     "build": "tsfmt -r && tsc",
     "test": "TSS_LOG='-file tsserver.log -level verbose' node node_modules/typescript/bin/tsserver < input.ldjson",
@@ -10,6 +21,7 @@
   },
   "author": "vvakame",
   "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
     "typescript": "^2.5.0-dev.20170707",
     "typescript-formatter": "^5.2.0"
