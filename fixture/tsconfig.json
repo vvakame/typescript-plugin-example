@@ -7,7 +7,8 @@
     "plugins": [
       {
         "name": "../../",
-        "verbose": true
+        "verbose": true,
+        "goody": "😻"
       }
     ]
   }

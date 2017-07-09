@@ -14,6 +14,8 @@ const factory: ts.server.PluginModuleFactory = mod => {
     };
 
     function create(info: ts.server.PluginCreateInfo) {
+        const goody = info.config.goody || "😺";
+
         const log = (text: string) => {
             if (info.config.verbose) {
                 info.project.projectService.logger.info(text);
@@ -41,7 +43,7 @@ const factory: ts.server.PluginModuleFactory = mod => {
             }
             result.displayParts = [
                 ...result.displayParts,
-                { kind: "", text: "😺" },
+                { kind: "", text: goody },
             ];
             return result;
         };
@@ -55,7 +57,7 @@ const factory: ts.server.PluginModuleFactory = mod => {
             }
             result.displayParts = [
                 ...result.displayParts,
-                { kind: "", text: "😺" },
+                { kind: "", text: goody },
             ];
             return result;
         };

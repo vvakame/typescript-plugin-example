@@ -20,7 +20,8 @@ $ cat tsconfig.json
       {
         "name": "@vvakame/typescript-plugin-example",
         // Plugin specific configuration
-        "verbose": true
+        "verbose": true,
+        "goody": "😻"
       }
     ]
   }
