@@ -1,7 +1,6 @@
 {
-  "name": "typescript-plugin-example",
+  "name": "@vvakame/typescript-plugin-example",
   "version": "1.0.0",
-  "private": true,
   "description": "TypeScript plugin example",
   "main": "lib/index.js",
   "scripts": {
@@ -11,6 +10,6 @@
   "author": "vvakame",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^2.3.0"
+    "typescript": "^2.4.1"
   }
 }
